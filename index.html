@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @font-face {
+        font-family: Sixtyfour-3;
+        src: url(Sixtyfour-3/static/Sixtyfour-Regular.ttf);
+    }
+    div{
+        font-family: Sixtyfour-3;
+    }
+    @font-face{
+        font-family: static;
+        src: url(static/SourceCodePro-Medium.ttf)
+    }
+    p{
+        font-family: static;
+    }
+    *{
+        box-sizing: border-box;
+    }
+
+
+ body{
+        background-color: lightpink;
+    }
+    @media only screen and (max-width: 1000px)
+    {
+        body {
+            background-color: lightyellow;
+
+            }
+    }
+
+    .row::after{
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 15px
+    }
+
+.header {
+    background-color: aqua;
+    color: black;
+    padding: 15px;
+}
+
+.aside {
+    background-color: white;
+    padding: 15px;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 3px rgba(0,0,0,0.24);
+}
+
+
+.cats {
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.col-1 {width: 25%;}
+.col-2 {width: 50%;}
+@media only screen and (max-width: 760px){
+[class*="col-"]{
+    width: 100%;
+}
+}
+.joinBtn {
+  width: 5em;
+  height: 3ex;
+  background-color: gold;
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.joinBtn:hover {
+  background-color: bisque;
+}
+  
+</style>
+<body>
+<div class="header">
+    <h1>Which cat do you want to adopt? </h1>
+</div>
+
+<div class="col-1 left">
+    <div class="aside">
+        <h2>About Us</h2>
+        <p>Which cat you want to adopt?, is a nonprofit organization located everywhere in U.S. We are rescueing and reducing the homeless cat population and inspiring change to the world. Our program is 100% volunteer-powered and community supported. All of our vital life-saving funds come from generous supporters who believe in our mission statement.</p>
+        <h2>How the adoption works </h2>
+        <p>Select the cat you are interested to adoopt. After you have selected the cat, please go to the next page to confirm your addoption.We will do a background check and listen to how you are thinking of taking care a cat. After everything is set up, we will contact you if you are applicable to addopt a cat.  </p>
+        <p class="joinBtn">Adopt</p>
+
+    </div>    
+</div>
+
+    <div class="col-6">
+    <div class="cats">
+    <img src="export 6.png"><br>
+    <h1>Black</h1></div>
+</div>
+</div> 
+<div class="col-6">
+    <div class="cats">
+    <img src="export 5.png"><br>
+    <h1>Gray </h1></div>
+</div>
+</div>  
+<div class="col-6">
+    <div class="cats">
+    <img src="export 4.png"><br>
+    <h1>Spot </h1></div>
+</div> 
+</div>
+<div class="col-6">
+    <div class="cats">
+    <img src="export 3.png"><br>
+    <h1>Calico</h1></div>
+</div>
+</div>
+<div class="col-6">
+    <div class="cats">
+    <img src="export 3 copy.png"><br>
+    <h1>Skin</h1></div>
+</div>
+<div class="col-6">
+    <div class="cats">
+    <img src="export 3 copy 2.png"><br>
+    <h1>long</h1></div>
+</div>
+
+
+
+
+
+ 
+</body>
+</html>
